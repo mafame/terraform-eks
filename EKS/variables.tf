@@ -3,11 +3,11 @@
 #
 
 variable "cluster-name" {
-  default = "terraform-eks-demo"
+  default = "eks25"
   type    = string
 }
 variable "key_pair_name" {
-  default = "testkey"
+  default = "jenkins"
 }
 variable "eks_node_instance_type" {
   default = "t2.medium"
