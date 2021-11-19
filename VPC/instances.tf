@@ -1,5 +1,5 @@
 # Demo Ubuntu Server(t2.medium)
-resource "aws_instance" "Demo_Server" {
+resource "aws_instance" "Demo_Server"{
   count                  = 1
   ami                    = var.ubuntuami
   instance_type          = "t2.medium"
@@ -14,7 +14,7 @@ resource "aws_instance" "Demo_Server" {
 
 }
 # 2 Instance Of Redhat Servers(t2.micro)
-resource "aws_instance" "redhat_servers" {
+resource "aws_instance" "redhat_servers"{
   count                  = 2
   ami                    = var.redhatami
   instance_type          = "t2.micro"
