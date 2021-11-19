@@ -11,8 +11,8 @@ resource "aws_instance" "Demo_Server"{
     Name = "UbuntuServer"
     Type = "Docker"
   }
-
 }
+
 # 2 Instance Of Redhat Servers(t2.micro)
 resource "aws_instance" "redhat_servers"{
   count                  = 2
@@ -25,6 +25,4 @@ resource "aws_instance" "redhat_servers"{
   tags = {
     Name = "Redhat_Server_${count.index + 1}"
   }
-
-
 }
