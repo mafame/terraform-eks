@@ -11,7 +11,7 @@ required_version="~> 1.0"
 }
 
 provider "aws" {
-  region  = "us-west-1"
+  region  = "us-east-2"
 }
 
 # Using these data sources allows the configuration to be
