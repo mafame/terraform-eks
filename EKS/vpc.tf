@@ -11,7 +11,7 @@ resource "aws_vpc" "demo" {
 
   tags = tomap ({
     Name= "terraform-eks-demo-node"
-   shared= "kubernetes.io/cluster/${var.cluster-name}" 
+   (kubernetes.io/cluster/${var.cluster-name}) ="shared" 
     })
   
 }
@@ -26,7 +26,7 @@ resource "aws_subnet" "demo" {
 
   tags = tomap ({
     Name= "terraform-eks-demo-node"
-    shared= "kubernetes.io/cluster/${var.cluster-name}" 
+    (kubernetes.io/cluster/${var.cluster-name}) ="shared" 
     })
 }
 
