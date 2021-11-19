@@ -24,10 +24,10 @@ resource "aws_subnet" "demo" {
   map_public_ip_on_launch = true
   vpc_id                  = aws_vpc.demo.id
 
-  tags = tomap ({
-    Name= "terraform-eks-demo-node"
-    (kubernetes.io/cluster/${var.cluster-name}) ="shared" 
-    })
+  #tags = tomap ({
+  #  Name= "terraform-eks-demo-node"
+   # (kubernetes.io/cluster/${var.cluster-name}) ="shared" 
+   # })
 }
 
 resource "aws_internet_gateway" "demo" {
