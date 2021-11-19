@@ -1,5 +1,5 @@
 # Demo Ubuntu Server(t2.medium)
-resource "aws_instance" "Demo_Server"{
+resource "aws_instance" "Demo"{
   count                  = 1
   ami                    = var.ubuntuami
   instance_type          = "t2.medium"
