@@ -15,3 +15,6 @@ variable "eks_node_instance_type" {
 variable "instance_type" {
   default = "t2.medium"
 }
+variable "redhatami" {
+  default = "ami-0ba62214afa52bec7"
+}
